@@ -119,7 +119,6 @@ function Pizza({ pizzaObj }) {
       <div>
         <h3>{pizzaObj.name}</h3>
         <p>{pizzaObj.ingredients}</p>
-        <span>{pizzaObj.price}</span>
 
         {/* {pizzaObj.soldOut ? (
           <span>SOLD OUT</span>
@@ -167,10 +166,9 @@ function Order({ closeHour, openHour }) {
 // React v18
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  <App />,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
 );
 
 // React before 18
